@@ -1,0 +1,291 @@
+@font-face {
+  font-family: bahij;
+  src: url("Bahij_TheSansArabic-Plain.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gill Sans MT", "bahij", "Tajawal", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  margin-bottom: 60px;
+  width: calc(100% - 200px);
+  max-width: 800px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 40px) !important;
+    max-width: unset;
+  }
+}
+
+.container .logo {
+  width: 140px;
+  height: 140px;
+}
+
+.container .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .text-box {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.container .text-box h1 {
+  max-width: 600px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+}
+
+.container .select-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.container .select-container > p {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.container .select-container .select-box {
+  width: 100%;
+  margin-top: 20px;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .select-container .select-box .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .select-container .select-box .item img {
+  height: 131px;
+  border-radius: 10px;
+}
+
+.container .select-container .select-box .item p {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.container .select-container .select-box .item input {
+  margin-top: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.container .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.container .input-container input {
+  width: 100%;
+  height: 50px;
+  background-color: #943cb9;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.container .input-container input::-webkit-input-placeholder {
+  color: #e7bdfa;
+  font-weight: 500;
+}
+
+.container .input-container input:-ms-input-placeholder {
+  color: #e7bdfa;
+  font-weight: 500;
+}
+
+.container .input-container input::-ms-input-placeholder {
+  color: #e7bdfa;
+  font-weight: 500;
+}
+
+.container .input-container input::placeholder {
+  color: #e7bdfa;
+  font-weight: 500;
+}
+
+.container .input-container .errName {
+  width: 90%;
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #f03939;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.container .input-container button.create-the-card {
+  margin-top: 20px;
+  width: 90%;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #370a6d;
+}
+
+.container .input-container button.create-the-card:hover {
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  background-color: #370a6d;
+  color: #fff;
+}
+
+.images-container {
+  padding: 0px 40px;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  width: calc(100% - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 1;
+}
+
+@media (max-width: 730px) {
+  .images-container {
+    position: relative;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px;
+  }
+}
+
+.images-container .item.bottom {
+  height: 70px;
+}
+
+.images-container .item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.images-container .item .links {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.images-container .item .links img {
+  height: 25px;
+}
+/*# sourceMappingURL=style.css.map */
